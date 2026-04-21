@@ -13,7 +13,6 @@ The app is built with a focus on speed, simplicity, and a smooth user experience
 
 * Generate Vishu wishes instantly
 * Clean and simple user interface
-* Fast performance using Next.js
 * Mobile-friendly design
 * Easy sharing options
 
