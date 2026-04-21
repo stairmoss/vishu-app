@@ -1,0 +1,24 @@
+{
+  "name": "Vishu Kani – Digital Darshanam",
+  "short_name": "Vishu Kani",
+  "description": "Send personalised Vishu wishes and gift Kaineetam via UPI.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#FFFDD0",
+  "theme_color": "#D4AF37",
+  "lang": "ml-IN",
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "sizes": "48x48",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["lifestyle", "social"]
+}
