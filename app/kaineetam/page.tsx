@@ -12,7 +12,7 @@ export async function generateMetadata(
   parent: ResolvingMetadata
 ): Promise<Metadata> {
   const sParams = await searchParams;
-  const hostName = typeof sParams.to === 'string' ? sParams.to : 'Friend';
+  const hostName = typ`eof sParams.to === 'string' ? sParams.to : 'Friend';
   const payeeName = typeof sParams.pn === 'string' ? sParams.pn : 'Someone';
 
   return {
