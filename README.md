@@ -39,7 +39,7 @@ Make sure you have installed:
 Clone the repository:
 
 ```bash
-git clone https://github.com/your-username/vishu-wishes-app.git
+git clone https://github.com/stairmoss/vishu-app.git
 ```
 
 Go to the project folder:
