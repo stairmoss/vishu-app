@@ -45,7 +45,7 @@ git clone https://github.com/stairmoss/vishu-app.git
 Go to the project folder:
 
 ```bash
-cd vishu-wishes-app
+cd vishu-app
 ```
 
 Install dependencies:
