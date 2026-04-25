@@ -23,14 +23,35 @@
 @layer utilities {
   .kasavu-border {
     border: 4px solid var(--accent-gold);
-    box-shadow: 0 0 15px rgba(212, 175, 55, 0.4);
+    box-shadow: inset 0 0 15px rgba(212, 175, 55, 0.2), 0 0 20px rgba(212, 175, 55, 0.4);
+    position: relative;
+  }
+  
+  .kasavu-border::before {
+    content: "";
+    position: absolute;
+    inset: 2px;
+    border: 1px dashed rgba(212, 175, 55, 0.6);
+    pointer-events: none;
+    border-radius: inherit;
   }
   
   .glass-panel {
-    background: rgba(255, 253, 208, 0.85);
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(212, 175, 55, 0.5);
-    box-shadow: 0 8px 32px 0 rgba(184, 134, 11, 0.2);
+    background: linear-gradient(135deg, rgba(255, 253, 208, 0.9) 0%, rgba(255, 255, 255, 0.4) 100%);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(212, 175, 55, 0.3);
+    border-top: 1px solid rgba(255, 255, 255, 0.8);
+    border-left: 1px solid rgba(255, 255, 255, 0.8);
+    box-shadow: 0 8px 32px 0 rgba(139, 58, 14, 0.15);
+  }
+
+  .premium-input {
+    @apply w-full bg-white/60 backdrop-blur-sm border border-[#D4AF37]/40 rounded-xl py-3 px-4 text-[#8b3a0e] placeholder-[#8b3a0e]/50 font-medium transition-all duration-300;
+  }
+
+  .premium-input:focus {
+    @apply outline-none border-[#D4AF37] bg-white ring-4 ring-[#D4AF37]/20 shadow-[0_0_15px_rgba(212,175,55,0.2)];
   }
 
   .text-glow-gold {
